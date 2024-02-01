@@ -1,0 +1,165 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  text-align: center;
+}
+
+main {
+  background-color: darkgrey;
+  flex-grow: 1;
+}
+
+.navbar {
+  background-color: #333333;
+  overflow: hidden;
+  justify-content: flex-start !important;
+  padding: 0px;
+}
+
+.navbar a {
+  display: block;
+  color: #FC7E3A;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.carousel-container {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-item img {
+  max-width: 100%;
+  /* Hace que las imágenes se ajusten al ancho del contenedor */
+  height: auto;
+  /* Mantiene la proporción de la imagen */
+
+}
+
+/* Estilos para el footer */
+footer {
+  background-color: #333333;
+  color: #FC7E3A;
+  padding: 20px 0;
+  width: 100%;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contacto, .sobre-nosotros {
+  width: 45%;
+}
+
+.contacto p,.footer-sobre-nosotros  {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar a {
+    padding: 10px 0;
+  }
+  .galeria {
+    flex-direction: column;
+    align-items: center;
+  }
+  .producto {
+    width: calc(50% - 10px); /* Ancho del 50% con márgenes en pantallas más pequeñas */
+  }
+}
+
+
+/* estilos de  galeria */
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 15px;
+}
+
+.producto {
+  width: calc(25% - 10px); /* Establece el ancho deseado para cada elemento con márgenes */
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-bottom: 20px; /* Agrega márgenes inferiores entre las filas de elementos */
+}
+
+.producto img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.producto h3 {
+  margin: 10px 0;
+}
+
+.precio {
+  font-weight: bold;
+  color: #FC7E3A;
+}
+
+button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.contacto {
+  margin: 20px auto;
+  text-align: center;
+  width: 100%;
+}
+
+.contacto section ul {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  display: inline-block;
+  text-align: center;
+  list-style: none;
+  padding: 0;
+}
+
+
+iframe {
+  width: 100%;
+  height: 450px;
+  border: 0;
+}
