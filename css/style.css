@@ -4,6 +4,7 @@ body {
   min-height: 100vh;
   margin: 0;
   text-align: center;
+  font-family: 'Montserrat', sans-serif;
 }
 
 main {
@@ -53,16 +54,16 @@ footer {
 }
 
 .footer-container {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
   display: flex;
-  flex-direction: column;
+  flex-direction:row;
   justify-content: space-between;
   align-items: center;
 }
 
-.contacto, .sobre-nosotros {
-  width: 45%;
+.contacto, .footer-sobre-nosotros {
+  width: 50%;
 }
 
 .contacto p,.footer-sobre-nosotros  {
@@ -86,6 +87,15 @@ footer {
   .producto {
     width: calc(50% - 10px); /* Ancho del 50% con márgenes en pantallas más pequeñas */
   }
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
 }
 
 
@@ -143,23 +153,5 @@ button:hover {
 .contacto {
   margin: 20px auto;
   text-align: center;
-  width: 100%;
-}
-
-.contacto section ul {
-  width: 100%;
-  margin-bottom: 20px;
-  padding: 20px;
-  box-sizing: border-box;
-  display: inline-block;
-  text-align: center;
-  list-style: none;
-  padding: 0;
-}
-
-
-iframe {
-  width: 100%;
-  height: 450px;
-  border: 0;
+  width: 50%;
 }
