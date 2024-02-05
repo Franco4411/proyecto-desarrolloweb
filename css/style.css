@@ -98,6 +98,10 @@ footer {
   
 }
 
+.about-us-container {
+  margin: 30px 200px;
+  
+}
 
 /* estilos de  galeria */
 .galeria {
@@ -125,7 +129,7 @@ footer {
   height: auto;
   border-radius: 5px;
   margin-bottom: 10px;
-}
+} */
 
 .producto h3 {
   margin: 10px 0;
