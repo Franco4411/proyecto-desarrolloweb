@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  // Eliminar decoración de texto para enlaces
+  a {
+    text-decoration: none;
+  }
+  
+  // Reset de estilos para listas
+  ul,
+  ol {
+    list-style: none;
+  }

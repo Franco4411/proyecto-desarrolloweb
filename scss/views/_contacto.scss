@@ -1,0 +1,36 @@
+@import '../utilities/variables';
+
+// Estilos para la sección de contacto
+.contacto {
+  padding: 20px;
+}
+
+.info-contacto {
+  margin-bottom: 20px;
+
+  h2 {
+    margin-bottom: 10px;
+  }
+
+  ul {
+    list-style: none;
+
+    li {
+      margin-bottom: 5px;
+    }
+  }
+}
+
+.map {
+  margin-bottom: 20px;
+
+  h2 {
+    margin-bottom: 10px;
+  }
+
+  iframe {
+    width: 100%;
+    height: 450px;
+    border: 0;
+  }
+}

@@ -1,0 +1,44 @@
+// Estilos para la galería de productos
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 15px;
+  
+  .producto {
+    display: inline-block;
+    width: calc(25% - 10px);
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 20px;
+    transition: transform 0.3s, filter 0.3s; /* Aplicar la transición a todos los cambios */
+    
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+    
+    h3 {
+      margin: 10px 0;
+      cursor: pointer;
+    }
+    
+    .precio {
+      font-weight: bold;
+      color: #FC7E3A;
+    }
+    
+    &:hover { /* Pseudo-clase :hover para el elemento .producto */
+      transform: scale(1.1); /* Aumentar el tamaño de la imagen al 110% cuando se pasa el cursor sobre ella */
+      filter: brightness(80%); /* Oscurecer un poco la imagen */
+    }
+  }
+}
