@@ -28,16 +28,24 @@ main {
   background-color: #ddd;
   flex: 1;
 }
-
-.navbar-toggler-icon img {
-  width: 100%;
-  height: auto;
+main .about-us {
+  margin: auto;
+  padding: 4rem;
 }
 
-.navbar,
-a {
+.navbar a,
+.navbar-expand-lg {
   background-color: #333333;
-  color: #FC7E3A !important;
+  color: #FC7E3A;
+}
+.navbar a .navbar-brand,
+.navbar-expand-lg .navbar-brand {
+  color: #ddd;
+}
+.navbar a .navbar-toggler .navbar-toggler-icon img,
+.navbar-expand-lg .navbar-toggler .navbar-toggler-icon img {
+  width: 100%;
+  height: auto;
 }
 
 footer {
@@ -52,22 +60,41 @@ footer .footer-container {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   justify-content: space-between;
 }
-footer .footer-container .contacto,
-footer .footer-container .footer-sobre-nosotros {
+footer .footer-container .contacto-sobre-nosotros {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+footer .footer-container .contacto-sobre-nosotros .contacto,
+footer .footer-container .contacto-sobre-nosotros .sobre-nosotros {
   text-align: center;
   width: 48%;
 }
-footer .footer-container .contacto h3,
-footer .footer-container .footer-sobre-nosotros h3 {
+footer .footer-container .contacto-sobre-nosotros .contacto h3,
+footer .footer-container .contacto-sobre-nosotros .sobre-nosotros h3 {
+  color: #ddd;
   margin-bottom: 10px;
 }
-footer .footer-container .contacto p,
-footer .footer-container .footer-sobre-nosotros p {
+footer .footer-container .contacto-sobre-nosotros .contacto p,
+footer .footer-container .contacto-sobre-nosotros .sobre-nosotros p {
+  text-align: center;
   margin-bottom: 5px;
 }
 
+@media screen and (max-width: 769px) {
+  .footer-container .contacto-sobre-nosotros {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
 .galeria {
   display: flex;
   flex-wrap: wrap;
@@ -86,7 +113,9 @@ footer .footer-container .footer-sobre-nosotros p {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
   margin-bottom: 20px;
-  transition: transform 0.3s, filter 0.3s; /* Aplicar la transición a todos los cambios */
+  transition: transform 0.3s, filter 0.3s;
+  /* Aplicar la transición a todos los cambios */
+  cursor: pointer;
 }
 .galeria .producto img {
   width: 100%;
@@ -96,15 +125,20 @@ footer .footer-container .footer-sobre-nosotros p {
 }
 .galeria .producto h3 {
   margin: 10px 0;
-  cursor: pointer;
 }
 .galeria .producto .precio {
   font-weight: bold;
   color: #FC7E3A;
 }
-.galeria .producto:hover { /* Pseudo-clase :hover para el elemento .producto */
-  transform: scale(1.1); /* Aumentar el tamaño de la imagen al 110% cuando se pasa el cursor sobre ella */
-  filter: brightness(80%); /* Oscurecer un poco la imagen */
+.galeria .producto:hover {
+  /* Pseudo-clase :hover para el elemento .producto */
+  transform: scale(1.1);
+  filter: brightness(80%);
+}
+@media screen and (max-width: 430px) {
+  .galeria .producto {
+    width: 160px;
+  }
 }
 
 .contacto {
@@ -113,6 +147,7 @@ footer .footer-container .footer-sobre-nosotros p {
 
 .info-contacto {
   margin-bottom: 20px;
+  text-align: center;
 }
 .info-contacto h2 {
   margin-bottom: 10px;
@@ -125,6 +160,7 @@ footer .footer-container .footer-sobre-nosotros p {
 }
 
 .map {
+  text-align: center;
   margin-bottom: 20px;
 }
 .map h2 {

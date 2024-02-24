@@ -1,4 +1,5 @@
 @import "../utilities/variables";
+@import "../utilities/mixins";
 
 body {
   background-color: $light-color;
@@ -15,17 +16,27 @@ body {
 main {
   background-color: $light-color ;
   flex: 1;
+  .about-us {
+    margin: auto;
+    padding: 4rem;
+  }
 }
 
-.navbar-toggler-icon img {
-  width: 100%;
-  height: auto;
-}
-.navbar,
-a {
+.navbar a,
+.navbar-expand-lg {
   background-color: $dark-color;
-  color: $primary-color !important;
-} 
+color: $primary-color;
+  .navbar-brand {
+    color: $light-color;
+  }
+  .navbar-toggler {
+    .navbar-toggler-icon img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
 footer {
   bottom: 0;
   left: 0;
@@ -33,24 +44,44 @@ footer {
   padding: 20px 0;
   background-color: $dark-color;
   color: $primary-color;
+
   .footer-container {
     max-width: 1200px;
     margin: 0 auto;
-    display: flex;
+    @include flex-center;
+    text-align: center;
     justify-content: space-between;
 
-    .contacto,
-    .footer-sobre-nosotros {
-      text-align: center;
-      width: 48%;
+    .contacto-sobre-nosotros {
+      @include flex-center;
+      width: 100%;
+      justify-content: space-between;
 
-      h3 {
-        margin-bottom: 10px;
-      }
+      .contacto,
+      .sobre-nosotros {
+        text-align: center;
+        width: 48%;
 
-      p {
-        margin-bottom: 5px;
+        h3 {
+          color: $light-color;
+          margin-bottom: 10px;
+        }
+
+        p {
+          text-align: center;
+          margin-bottom: 5px;
+        }
       }
     }
   }
+
+  
 }
+@media screen and (max-width: 769px) {
+
+    .footer-container .contacto-sobre-nosotros {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
