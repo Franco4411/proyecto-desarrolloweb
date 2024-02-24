@@ -23,32 +23,24 @@ body {
   text-align: center;
   font-family: "Montserrat", sans-serif;
 }
-
-main {
-  background-color: #ddd;
-  flex: 1;
-}
-main .about-us {
-  margin: auto;
-  padding: 4rem;
-}
-
-.navbar a,
-.navbar-expand-lg {
+body .navbar a,
+body .navbar-expand-lg {
   background-color: #333333;
   color: #FC7E3A;
 }
-.navbar a .navbar-brand,
-.navbar-expand-lg .navbar-brand {
+body .navbar a .navbar-brand,
+body .navbar-expand-lg .navbar-brand {
   color: #ddd;
 }
-.navbar a .navbar-toggler .navbar-toggler-icon img,
-.navbar-expand-lg .navbar-toggler .navbar-toggler-icon img {
-  width: 100%;
-  height: auto;
+body main {
+  background-color: #ddd;
+  flex: 1;
 }
-
-footer {
+body main .about-us {
+  margin: auto;
+  padding: 4rem;
+}
+body footer {
   bottom: 0;
   left: 0;
   width: 100%;
@@ -56,7 +48,7 @@ footer {
   background-color: #333333;
   color: #FC7E3A;
 }
-footer .footer-container {
+body footer .footer-container {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
@@ -65,36 +57,36 @@ footer .footer-container {
   text-align: center;
   justify-content: space-between;
 }
-footer .footer-container .contacto-sobre-nosotros {
+body footer .footer-container .contacto-sobre-nosotros {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   justify-content: space-between;
 }
-footer .footer-container .contacto-sobre-nosotros .contacto,
-footer .footer-container .contacto-sobre-nosotros .sobre-nosotros {
+body footer .footer-container .contacto-sobre-nosotros .contacto,
+body footer .footer-container .contacto-sobre-nosotros .sobre-nosotros {
   text-align: center;
   width: 48%;
 }
-footer .footer-container .contacto-sobre-nosotros .contacto h3,
-footer .footer-container .contacto-sobre-nosotros .sobre-nosotros h3 {
+body footer .footer-container .contacto-sobre-nosotros .contacto h3,
+body footer .footer-container .contacto-sobre-nosotros .sobre-nosotros h3 {
   color: #ddd;
   margin-bottom: 10px;
 }
-footer .footer-container .contacto-sobre-nosotros .contacto p,
-footer .footer-container .contacto-sobre-nosotros .sobre-nosotros p {
+body footer .footer-container .contacto-sobre-nosotros .contacto p,
+body footer .footer-container .contacto-sobre-nosotros .sobre-nosotros p {
   text-align: center;
   margin-bottom: 5px;
 }
-
 @media screen and (max-width: 769px) {
-  .footer-container .contacto-sobre-nosotros {
+  body .footer-container .contacto-sobre-nosotros {
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
 }
+
 .galeria {
   display: flex;
   flex-wrap: wrap;
@@ -168,6 +160,13 @@ footer .footer-container .contacto-sobre-nosotros .sobre-nosotros p {
   width: 50%;
   height: 450px;
   border: 2px;
+}
+@media screen and (max-width: 769px) {
+  .contacto .map iframe {
+    width: 100%;
+    height: 200px;
+    border: 2px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
