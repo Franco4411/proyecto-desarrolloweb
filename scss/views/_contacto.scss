@@ -2,39 +2,38 @@
 
 // Estilos para la sección de contacto
 .contacto {
- display: flex;
- flex-direction: row;
+
   padding: 20px;
-}
 
-.info-contacto {
-  margin-bottom: 20px;
-  text-align: center;
+  .info-contacto {
+    margin-bottom: 20px;
+    text-align: center;
 
-  h2 {
-    margin-bottom: 10px;
-  }
+    h2 {
+      margin-bottom: 10px;
+    }
 
-  ul {
-    list-style: none;
+    ul {
+      list-style: none;
 
-    li {
-      margin-bottom: 5px;
+      li {
+        margin-bottom: 5px;
+      }
     }
   }
-}
 
-.map {
-  text-align: center;
-  margin-bottom: 20px;
+  .map {
+    text-align: center;
+    margin-bottom: 20px;
 
-  h2 {
-    margin-bottom: 10px;
-  }
+    h2 {
+      margin-bottom: 10px;
+    }
 
-  iframe {
-    width: 250px;
-    height: 20px;
-    border: 0;
+    iframe {
+      width: 50%;
+      height: 450px;
+      border: 2px;
+    }
   }
 }

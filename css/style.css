@@ -144,32 +144,30 @@ footer .footer-container .contacto-sobre-nosotros .sobre-nosotros p {
 .contacto {
   padding: 20px;
 }
-
-.info-contacto {
+.contacto .info-contacto {
   margin-bottom: 20px;
   text-align: center;
 }
-.info-contacto h2 {
+.contacto .info-contacto h2 {
   margin-bottom: 10px;
 }
-.info-contacto ul {
+.contacto .info-contacto ul {
   list-style: none;
 }
-.info-contacto ul li {
+.contacto .info-contacto ul li {
   margin-bottom: 5px;
 }
-
-.map {
+.contacto .map {
   text-align: center;
   margin-bottom: 20px;
 }
-.map h2 {
+.contacto .map h2 {
   margin-bottom: 10px;
 }
-.map iframe {
-  width: 100%;
+.contacto .map iframe {
+  width: 50%;
   height: 450px;
-  border: 0;
+  border: 2px;
 }
 
 /*# sourceMappingURL=style.css.map */
