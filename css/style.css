@@ -16,11 +16,9 @@ ol {
 
 body {
   background-color: #ddd;
-  display: flex;
   flex-direction: column;
   min-height: 100vh;
   margin: 0;
-  text-align: center;
   font-family: "Montserrat", sans-serif;
 }
 body .navbar a,
