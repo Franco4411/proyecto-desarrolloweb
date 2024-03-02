@@ -19,6 +19,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   margin: 0;
+  display: flex;
   font-family: "Montserrat", sans-serif;
 }
 body .navbar a,
@@ -29,6 +30,11 @@ body .navbar-expand-lg {
 body .navbar a .navbar-brand,
 body .navbar-expand-lg .navbar-brand {
   color: #ddd;
+}
+body .navbar a .navbar-toggler .navbar-toggler-icon img,
+body .navbar-expand-lg .navbar-toggler .navbar-toggler-icon img {
+  width: 100%;
+  height: auto;
 }
 body main {
   background-color: #ddd;
